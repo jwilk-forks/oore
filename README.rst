@@ -18,7 +18,7 @@ matches a `Unicode Language Identifier`_::
         from oore import r
 
         digit = r(u'[0-9]')
-        alpha = r(u'[A-Za-z')
+        alpha = r(u'[A-Za-z]')
         alphanum = r(u'[0-9A-Za-z]')
         unicode_variant_subtag = alphanum[5, 8] | (digit + alphanum[3])
         unicode_region_subtag = alpha[2] | digit[3]
